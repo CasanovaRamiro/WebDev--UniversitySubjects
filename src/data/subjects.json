@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Programación Básica I",
+    "hours": 128,
+    "correlativity": [],
+    "code": 2619,
+    "done": true
+  },
+  {
+    "name": "Informática General",
+    "hours": 128,
+    "correlativity": [],
+    "code": 2620,
+    "done": true
+  },
+  {
+    "name": "Matemática General",
+    "hours": 128,
+    "correlativity": [],
+    "code": 2621,
+    "done": false
+  },
+  {
+    "name": "Inglés Técnico I",
+    "hours": 128,
+    "correlativity": [],
+    "code": 2622,
+    "done": true
+  },
+  {
+    "name": "Programación Básica II",
+    "hours": 128,
+    "correlativity": [2619],
+    "code": 2623,
+    "done": true
+  },
+  {
+    "name": "Programación Web I",
+    "hours": 128,
+    "correlativity": [2619, 2620],
+    "code": 2624,
+    "done": false
+  },
+  {
+    "name": "Bases de Datos I",
+    "hours": 128,
+    "correlativity": [2619, 2620, 2621],
+    "code": 2625,
+    "done": false
+  },
+  {
+    "name": "Introducción al Diseño Gráfico en la Web",
+    "hours": 128,
+    "correlativity": [2620],
+    "code": 2626,
+    "done": false
+  },
+  {
+    "name": "Inglés Técnico II",
+    "hours": 128,
+    "correlativity": [2622],
+    "code": 2627,
+    "done": false
+  },
+  {
+    "name": "Programación Web II",
+    "hours": 128,
+    "correlativity": [2623, 2624, 2625],
+    "code": 2628,
+    "done": false
+  },
+  {
+    "name": "Diseños de Aplicaciones Web",
+    "hours": 128,
+    "correlativity": [2623, 2624, 2625],
+    "code": 2629,
+    "done": false
+  },
+  {
+    "name": "Visualizaciones e Interfaces",
+    "hours": 128,
+    "correlativity": [2624, 2626],
+    "code": 2630,
+    "done": false
+  },
+  {
+    "name": "Taller Web I",
+    "hours": 128,
+    "correlativity": [2623, 2624, 2625],
+    "code": 2631,
+    "done": false
+  },
+  {
+    "name": "Base de Datos II",
+    "hours": 128,
+    "correlativity": [2625, 2629],
+    "code": 2632,
+    "done": false
+  },
+  {
+    "name": "Programación Web III",
+    "hours": 128,
+    "correlativity": [2628, 2629, 2630],
+    "code": 2633,
+    "done": false
+  },
+  {
+    "name": "Tecnología de Redes",
+    "hours": 128,
+    "correlativity": [2630],
+    "code": 2634,
+    "done": false
+  },
+  {
+    "name": "Taller Web II",
+    "hours": 128,
+    "correlativity": [2631],
+    "code": 2635,
+    "done": false
+  },
+  {
+    "name": "Seguridad y Calidad en Aplicaciones Web",
+    "hours": 128,
+    "correlativity": [2628, 2629],
+    "code": 2636,
+    "done": false
+  },
+  {
+    "name": "Introducción a la Administración de Proyectos",
+    "hours": 128,
+    "correlativity": [2632, 2633, 2634],
+    "code": 2637,
+    "done": false
+  },
+  {
+    "name": "Taller Práctico Integrador",
+    "hours": 128,
+    "correlativity": [2632, 2633, 2634, 2635, 2636],
+    "code": 2638,
+    "done": false
+  }
+]

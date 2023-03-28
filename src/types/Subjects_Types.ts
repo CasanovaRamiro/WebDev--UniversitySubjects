@@ -4,4 +4,5 @@ export type SubjectTypes = {
   correlativity: number[] | [];
   code: number;
   done: boolean;
+  year: number;
 };

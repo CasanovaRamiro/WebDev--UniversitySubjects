@@ -4,139 +4,159 @@
     "hours": 128,
     "correlativity": [],
     "code": 2619,
-    "done": true
+    "done": true,
+    "year": 1
   },
   {
     "name": "Informática General",
     "hours": 128,
     "correlativity": [],
     "code": 2620,
-    "done": true
+    "done": true,
+    "year": 1
   },
   {
     "name": "Matemática General",
     "hours": 128,
     "correlativity": [],
     "code": 2621,
-    "done": false
+    "done": false,
+    "year": 1
   },
   {
     "name": "Inglés Técnico I",
     "hours": 128,
     "correlativity": [],
     "code": 2622,
-    "done": true
+    "done": true,
+    "year": 1
   },
   {
     "name": "Programación Básica II",
     "hours": 128,
     "correlativity": [2619],
     "code": 2623,
-    "done": true
+    "done": true,
+    "year": 1
   },
   {
     "name": "Programación Web I",
     "hours": 128,
     "correlativity": [2619, 2620],
     "code": 2624,
-    "done": false
+    "done": false,
+    "year": 1
   },
   {
     "name": "Bases de Datos I",
     "hours": 128,
     "correlativity": [2619, 2620, 2621],
     "code": 2625,
-    "done": false
+    "done": false,
+    "year": 1
   },
   {
     "name": "Introducción al Diseño Gráfico en la Web",
     "hours": 128,
     "correlativity": [2620],
     "code": 2626,
-    "done": false
+    "done": false,
+    "year": 1
   },
   {
     "name": "Inglés Técnico II",
     "hours": 128,
     "correlativity": [2622],
     "code": 2627,
-    "done": false
+    "done": false,
+    "year": 1
   },
   {
     "name": "Programación Web II",
     "hours": 128,
     "correlativity": [2623, 2624, 2625],
     "code": 2628,
-    "done": false
+    "done": false,
+    "year": 2
   },
   {
     "name": "Diseños de Aplicaciones Web",
     "hours": 128,
     "correlativity": [2623, 2624, 2625],
     "code": 2629,
-    "done": false
+    "done": false,
+    "year": 2
   },
   {
     "name": "Visualizaciones e Interfaces",
     "hours": 128,
     "correlativity": [2624, 2626],
     "code": 2630,
-    "done": false
+    "done": false,
+    "year": 2
   },
   {
     "name": "Taller Web I",
     "hours": 128,
     "correlativity": [2623, 2624, 2625],
     "code": 2631,
-    "done": false
+    "done": false,
+    "year": 2
   },
   {
     "name": "Base de Datos II",
     "hours": 128,
     "correlativity": [2625, 2629],
     "code": 2632,
-    "done": false
+    "done": false,
+    "year": 2
   },
   {
     "name": "Programación Web III",
     "hours": 128,
     "correlativity": [2628, 2629, 2630],
     "code": 2633,
-    "done": false
+    "done": false,
+    "year": 2
   },
   {
     "name": "Tecnología de Redes",
     "hours": 128,
     "correlativity": [2630],
     "code": 2634,
-    "done": false
+    "done": false,
+    "year": 2
   },
   {
     "name": "Taller Web II",
     "hours": 128,
     "correlativity": [2631],
     "code": 2635,
-    "done": false
+    "done": false,
+    "year": 2
   },
   {
     "name": "Seguridad y Calidad en Aplicaciones Web",
     "hours": 128,
     "correlativity": [2628, 2629],
     "code": 2636,
-    "done": false
+    "done": false,
+    "year": 2
   },
   {
     "name": "Introducción a la Administración de Proyectos",
     "hours": 128,
     "correlativity": [2632, 2633, 2634],
     "code": 2637,
-    "done": false
+    "done": false,
+    "year": 3
   },
   {
     "name": "Taller Práctico Integrador",
     "hours": 128,
     "correlativity": [2632, 2633, 2634, 2635, 2636],
     "code": 2638,
-    "done": false
+    "done": false,
+    "year": 3
   }
 ]

@@ -1,4 +1,5 @@
 import { SubjectTypes } from "../types/Subjects_Types";
+import ProgressBar from "./ProgressBar";
 
 type Props = {
   subjects: SubjectTypes[];
@@ -9,28 +10,28 @@ function StatusByYear({ subjects }: Props) {
   let secondYearSubjects = subjects.filter((e) => e.year === 2);
   let thirdYearSubjects = subjects.filter((e) => e.year === 3);
   return (
-    <ul>
-      <li>
-        First Year:{" "}
-        {(
+    <ul className="flex flex-col items-center m-5">
+      <ProgressBar
+        percentage={(
           firstYearSubjects.filter((e) => e.done === true).length /
           firstYearSubjects.length
         ).toLocaleString("en", { style: "percent" })}
-      </li>
-      <li>
-        Second Year:{" "}
-        {(
+        year="First Year"
+      />
+      <ProgressBar
+        percentage={(
           secondYearSubjects.filter((e) => e.done === true).length /
           secondYearSubjects.length
         ).toLocaleString("en", { style: "percent" })}
-      </li>
-      <li>
-        Third Year:{" "}
-        {(
+        year="Second Year"
+      />
+      <ProgressBar
+        percentage={(
           thirdYearSubjects.filter((e) => e.done === true).length /
           thirdYearSubjects.length
         ).toLocaleString("en", { style: "percent" })}
-      </li>
+        year="Third Year"
+      />
     </ul>
   );
 }

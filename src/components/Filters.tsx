@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
-import subjects from "../data/subjects.json";
+// import subjects from "../data/subjects.json";
+import { SubjectTypes } from "../types/Subjects_Types";
 import { isAvailable } from "./controllers";
-
-function Filters({ setFilteredSubjects }: any) {
+type Props = {
+  setFilteredSubjects: any;
+  subjects: SubjectTypes[];
+};
+function Filters({ setFilteredSubjects, subjects }: Props) {
   const [filter, setFilter] = useState("all");
 
   const filterSubjects = () => {
@@ -10,10 +14,10 @@ function Filters({ setFilteredSubjects }: any) {
 
     if (filter === "completed") return subjects.filter((e) => e.done === true);
     if (filter === "missing") return subjects.filter((e) => e.done === false);
-    if (filter === "available") return subjects.filter((e) => isAvailable(e));
+    if (filter === "available")
+      return subjects.filter((e) => isAvailable(e, subjects));
   };
   useEffect(() => {
-    console.log(filter);
     setFilteredSubjects(filterSubjects());
   }, [filter]);
   let selectStyle = "border rounded border-slate-500 ";

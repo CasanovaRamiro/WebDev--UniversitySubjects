@@ -1,16 +1,16 @@
 import { SubjectTypes } from "../types/Subjects_Types";
-import { isAvailable } from "./controllers";
 type props = {
   subject: SubjectTypes;
+  isAvailable: boolean;
 };
-function Row({ subject }: props) {
+function Row({ subject, isAvailable }: props) {
   let style = "";
   subject?.done
     ? (style =
         "  text-center my-5 mx-9 bg-green-400 hover:rotate-2 duration-100 shadow-lg md:w-2/5 w-full")
     : (style =
         " text-center my-5 mx-9 bg-red-400 hover:rotate-2 duration-100 shadow-2xl md:w-2/5 w-full");
-  if (isAvailable(subject))
+  if (isAvailable)
     style =
       " text-center my-5 mx-9 bg-blue-400 hover:rotate-2 duration-100 shadow-2xl md:w-2/5 w-full";
   return (
@@ -18,12 +18,12 @@ function Row({ subject }: props) {
       <h4 className="text-2xl font-bold underline">{subject?.name}</h4>
       <p>Comisión: {subject?.code}</p>
       <p>
-        correlativas:
-        {subject?.correlativity.length >= 1
+        Correlativas:
+        {subject?.correlativity[0] > 1000
           ? subject?.correlativity.map((e: number) => {
               return `${e}, `;
             })
-          : "none"}
+          : " Ninguna"}
       </p>
       <p></p>
     </li>

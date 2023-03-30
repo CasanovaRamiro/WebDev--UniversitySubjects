@@ -1,7 +1,6 @@
 import { SubjectTypes } from "../types/Subjects_Types";
 
 export function isAvailable(subject: SubjectTypes, subjects: SubjectTypes[]) {
-  console.log(subjects);
   if (subject.done === true) return false;
   if (subject.correlativity[0] < 1000) return true;
   return subject.correlativity.every((e) => {

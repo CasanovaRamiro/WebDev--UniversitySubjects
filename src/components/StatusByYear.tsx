@@ -16,7 +16,7 @@ function StatusByYear({ subjects }: Props) {
           firstYearSubjects.filter((e) => e.done === true).length /
           firstYearSubjects.length
         ).toLocaleString("en", { style: "percent" })}
-        year="First Year"
+        year="Primer Año"
       />
       {secondYearSubjects.filter((e) => e.done === true).length !== 0 && (
         <ProgressBar
@@ -24,7 +24,7 @@ function StatusByYear({ subjects }: Props) {
             secondYearSubjects.filter((e) => e.done === true).length /
             secondYearSubjects.length
           ).toLocaleString("en", { style: "percent" })}
-          year="Second Year"
+          year="Segundo Año"
         />
       )}
       {thirdYearSubjects.filter((e) => e.done === true).length !== 0 && (
@@ -33,7 +33,7 @@ function StatusByYear({ subjects }: Props) {
             thirdYearSubjects.filter((e) => e.done === true).length /
             thirdYearSubjects.length
           ).toLocaleString("en", { style: "percent" })}
-          year="Third Year"
+          year="Tercer Año"
         />
       )}
     </ul>

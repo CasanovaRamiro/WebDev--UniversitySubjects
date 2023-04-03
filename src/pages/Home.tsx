@@ -52,7 +52,7 @@ function Home() {
           setFilteredSubjects={setFilteredSubjects}
           subjects={subjects}
         />
-        <ul className=" flex justify-center flex-wrap">
+        <ul className=" flex justify-center flex-wrap text-stone-200">
           {filteredSubjects.map((e, id) => {
             return (
               <Row

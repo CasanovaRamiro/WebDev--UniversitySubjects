@@ -7,25 +7,26 @@ function Row({ subject, isAvailable }: props) {
   let style = "";
   subject?.done
     ? (style =
-        "  text-center my-5 mx-9 bg-green-400 hover:rotate-2 duration-100 shadow-lg md:w-2/5 w-full")
+        "rounded border-2 border-solid border-green-700 text-center my-5 mx-9 bg-green-500 hover:rotate-2 duration-100 shadow-lg md:w-2/5 w-full p-1")
     : (style =
-        " text-center my-5 mx-9 bg-red-400 hover:rotate-2 duration-100 shadow-2xl md:w-2/5 w-full");
+        "rounded border-2 border-solid border-red-700 text-center my-5 mx-9 bg-red-500 hover:rotate-2 duration-100 shadow-2xl md:w-2/5 w-full p-1");
   if (isAvailable)
     style =
-      " text-center my-5 mx-9 bg-blue-400 hover:rotate-2 duration-100 shadow-2xl md:w-2/5 w-full";
+      "rounded border-2 border-solid border-blue-700 text-center my-5 mx-9 bg-blue-500 hover:rotate-2 duration-100 shadow-2xl md:w-2/5 w-full p-1";
   return (
     <li className={style}>
       <h4 className="text-2xl font-bold underline">{subject?.name}</h4>
-      <p>Comisión: {subject?.code}</p>
-      <p>
-        Correlativas:
-        {subject?.correlativity[0] > 1000
-          ? subject?.correlativity.map((e: number) => {
-              return `${e}, `;
-            })
-          : " Ninguna"}
-      </p>
-      <p></p>
+      <div className="flex justify-around p-1">
+        <p>Comisión: {subject?.code}</p>
+        <p>
+          Correlativas:
+          {subject?.correlativity[0] > 1000
+            ? subject?.correlativity.map((e: number) => {
+                return `${e}, `;
+              })
+            : " Ninguna"}
+        </p>
+      </div>
     </li>
   );
 }

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import subjects from "../data/subjects.json";
 import { SubjectTypes } from "../types/Subjects_Types";
 import { isAvailable } from "./controllers";
 type Props = {

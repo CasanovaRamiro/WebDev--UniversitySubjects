@@ -14,10 +14,7 @@ function Home() {
 
   const fetchSubjects = async (): Promise<SubjectTypes[]> => {
     return await axios
-      .get(
-        "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-1qPt6Byrmz_Hv1FamuowPOExlW_vIF5CzhN_c8jHSeNF-rT6I7jKjjOxw1MYKS3IWXOyYkpjvCtD/pub?gid=92852199&single=true&output=csv",
-        { responseType: "blob" }
-      )
+      .get(import.meta.env.VITE_API_URL, { responseType: "blob" })
       .then(
         (response) =>
           new Promise<SubjectTypes[]>((resolve, reject) => {

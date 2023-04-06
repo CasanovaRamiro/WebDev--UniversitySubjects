@@ -37,7 +37,7 @@ function Home() {
 
   if (subjects.length !== 0) {
     return (
-      <div className=" grid grid-flow-row auto-rows-max text-center gap-y-px	max-w-7xl m-auto">
+      <div className="mb-12 grid grid-flow-row auto-rows-max text-center gap-y-px	max-w-7xl m-auto ">
         <h1 className="text-4xl font-bold border-b-2 border-stone-900 pb-2 ">
           Progreso
         </h1>

@@ -10,7 +10,7 @@ function StatusByYear({ subjects }: Props) {
   let secondYearSubjects = subjects.filter((e) => e.year === 2);
   let thirdYearSubjects = subjects.filter((e) => e.year === 3);
   return (
-    <ul className="flex flex-col items-center m-5">
+    <ul className="flex flex-col items-center m-5 max-w-[100%]">
       <ProgressBar
         percentage={(
           firstYearSubjects.filter((e) => e.done === true).length /

@@ -4,7 +4,7 @@ type Props = {
 };
 function ProgressBar({ percentage, year }: Props) {
   return (
-    <li className="w-96 m-1 max-w-[100%]">
+    <li className="w-96 m-auto max-w-[100%]">
       <label htmlFor={year}>{year}</label>
       <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700 max-w-[100%]">
         <div

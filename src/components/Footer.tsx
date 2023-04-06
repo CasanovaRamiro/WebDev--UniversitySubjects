@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 z-20 w-full p-2 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-4 dark:bg-gray-800 dark:border-gray-600 overflow-hidden  max-w-[100%]">
+    <footer className="fixed bottom-0 left-0 z-20 w-full p-2 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-4 dark:bg-gray-800 dark:border-gray-600 overflow-hidden ">
       <div></div>
       <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
         © 2023{" "}
@@ -16,7 +16,7 @@ function Footer() {
         <li>
           <a
             href="https://www.linkedin.com/in/ramiro-casanova/"
-            className="mr-4 hover:underline md:mr-6"
+            className="hover:underline"
           >
             Contact
           </a>

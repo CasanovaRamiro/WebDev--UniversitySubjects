@@ -1,5 +1,4 @@
-import { useState, useEffect, SetStateAction } from "react";
-// import subjects from "../data/subjects.json";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 import Filters from "../components/Filters";
@@ -37,19 +36,19 @@ function Home() {
 
   if (subjects.length !== 0) {
     return (
-      <div className="mb-12 grid grid-flow-row auto-rows-max text-center gap-y-px	max-w-7xl m-auto ">
-        <h1 className="text-4xl font-bold border-b-2 border-stone-900 pb-2 ">
+      <div className="mb-12 grid grid-flow-row auto-rows-max text-center gap-y-px	max-w-7xl mt-20 ">
+        <span className="lg:w-full text-4xl font-bold border-b-2 border-stone-900 pb-2 ">
           Progreso
-        </h1>
+        </span>
         <StatusByYear subjects={subjects} />
-        <h1 className="text-4xl font-bold border-b-2 border-stone-900 pb-2 ">
+        <span className=" lg:w-full text-4xl font-bold border-b-2 border-stone-900 pb-2 ">
           Materias
-        </h1>
+        </span>
         <Filters
           setFilteredSubjects={setFilteredSubjects}
           subjects={subjects}
         />
-        <ul className=" flex justify-center flex-wrap text-stone-200">
+        <ul className=" flex justify-center mx-0 flex-wrap text-stone-200">
           {filteredSubjects.map((e, id) => {
             return (
               <Row
